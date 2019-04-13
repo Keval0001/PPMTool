@@ -30,7 +30,7 @@ public class Project {
 	private String projectIdentifier;
 	
 	@NotBlank(message = "Project description is required")
-	private String decription;
+	private String description;
 	
 	@JsonFormat(pattern = "yyyy-mm-dd")
 	private Date start_date;
@@ -72,12 +72,12 @@ public class Project {
 		this.projectIdentifier = projectIdentifier;
 	}
 
-	public String getDecription() {
-		return decription;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setDecription(String decription) {
-		this.decription = decription;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public Date getStart_date() {
