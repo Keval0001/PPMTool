@@ -69,7 +69,6 @@ INDEX VERSION 1.130+C:\Keval\PPMToolFullStackReact+Java\PPMToolFullStack\.metada
 1367981090.index
 984225034.index
 4289135590.index
-3774133819.index
 3231380257.index
 229355804.index
 2243477360.index

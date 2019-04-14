@@ -1,15 +1,21 @@
 package io.intelligence.ppmtool.web;
 
+<<<<<<< HEAD
+=======
 import java.util.HashMap;
 import java.util.Map;
 
+>>>>>>> branch5
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+<<<<<<< HEAD
+=======
 import org.springframework.validation.FieldError;
+>>>>>>> branch5
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,6 +34,9 @@ public class ProjectController {
 	@PostMapping("")
 	public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result){
 		if(result.hasErrors()) {
+<<<<<<< HEAD
+			return new ResponseEntity<String>("Invalid Project Object", HttpStatus.BAD_REQUEST);
+=======
 			
 			Map<String,String> errorMap = new HashMap();
 			
@@ -37,6 +46,7 @@ public class ProjectController {
 			
 			
 			return new ResponseEntity<Map<String,String>>(errorMap, HttpStatus.BAD_REQUEST);
+>>>>>>> branch5
 					
 		}
 		
