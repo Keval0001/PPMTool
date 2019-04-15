@@ -34,5 +34,9 @@ public class ProjectService {
 		
 		return project;
 	}
+	
+	public Iterable<Project> findAll(){
+		return projectRepository.findAll();
+	}
 
 }

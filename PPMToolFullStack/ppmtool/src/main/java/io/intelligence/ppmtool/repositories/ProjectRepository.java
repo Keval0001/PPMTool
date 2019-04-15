@@ -15,5 +15,6 @@ public interface ProjectRepository extends CrudRepository<Project, Long>{
 	//Project findAllByid(Long id);
 	//*JPA SPECIALITY* it will automatically search based on field when new add findAllBy______ <- it can be any attribute from Project class as mentioned above;
 	
-	
+	@Override
+	Iterable<Project> findAll();
 }
