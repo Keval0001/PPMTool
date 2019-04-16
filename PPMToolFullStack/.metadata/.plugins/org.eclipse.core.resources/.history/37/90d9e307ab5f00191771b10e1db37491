@@ -1,0 +1,22 @@
+package io.intelligence.ppmtool.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+<<<<<<< HEAD
+public class ProjectIdException extends RuntimeException {
+	
+=======
+public class ProjectIdException extends RuntimeException{
+
+>>>>>>> branch7
+	public ProjectIdException(String message) {
+		super(message);
+	}
+
+<<<<<<< HEAD
+=======
+	
+>>>>>>> branch7
+}
